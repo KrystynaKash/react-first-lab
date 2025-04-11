@@ -1,16 +1,16 @@
-import Header from "./components/Header/Header.jsx";
-import Footer from "./components/Footer/Footer.jsx";
-import Main from "./components/Main/Main.jsx";
+import { BrowserRouter } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import AppRoutes from "./Routes";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Main />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <AppRoutes />
+    </BrowserRouter>
   );
 }
 
 export default App;
+
 
